@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 25rem;
+  height: 10rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: start;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #f8f9fa;
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+.radio-buttons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+}
+.radio-buttons-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  width: 30%;
+}
+.checkbox-input {
+  margin: 0rem !important;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: end;
+  margin-top: 0.5rem;
+}
+
+.title-header {
+  margin: 0px !important;
+  margin-right: 1rem !important;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #343a40;
   color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.circle-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.inline-text {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  padding: 0px;
+  margin: 0px !important;
+}
+
+p {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem !important;
+}
+h2 {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 1rem !important;
+}
+
+.card-text-container {
+  margin-left: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .radio-buttons-container {
+    width: 100%;
   }
 }
