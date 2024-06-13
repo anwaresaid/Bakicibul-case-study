@@ -1,7 +1,6 @@
 import React from "react";
 
 function LocationCard(data: any) {
-  console.log("placeholder", data.data);
   return (
     <div className="card">
       <div className="card-text-container">

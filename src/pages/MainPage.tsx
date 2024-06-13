@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
-import { useLazyQuery } from "@apollo/client";
-import { GET_DATA_QUERY } from "../Requests";
 import Filter from "../components/Filter";
 import { get } from "../service/apiService";
 import { useCheck, useRadioValue } from "../context/InputContext";
@@ -34,13 +32,13 @@ function MainPage() {
       <Filter />
       <div className="card-container">
         {data ? (
-          data.map((item: any) => {
+          data.map((item: any, index: number) => {
             return (
               <>
                 {checkLocation ? (
-                  <LocationCard data={item} />
+                  <LocationCard data={item} key={item.name + index + item.id} />
                 ) : (
-                  <Card data={item} />
+                  <Card data={item} key={item.name + index + item.id} />
                 )}
               </>
             );

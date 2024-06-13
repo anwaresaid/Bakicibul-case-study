@@ -1,7 +1,6 @@
 import React from "react";
 
 function Card({ data }: any) {
-  console.log("placeholder", data);
   return (
     <div className="card">
       <img src={data.image} alt={data.name} className="circle-img" />
